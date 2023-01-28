@@ -1,14 +1,42 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us to improve the platform
+    </p>
+    <form id="survey-form" action="">
+      <p id="name-label">Name</p>
+      <input id="name" type="text" placeholder="Enter your name" />
+      <p id="email-label">Email</p>
+      <input id="email" type="email" placeholder="Enter your email" />
 
-    <body>
-            Hello World 
-    </body>
-    
-    <footer>
+      <p id="number-label">Age <span>(optional)</span></p>
+      <input min="18" max="50" id="number" type="number" placeholder="Age" />
+      <p>Which option best describes your current role?</p>
 
-    </footer>
-
+      <select aria-placeholder="Select current role" id="dropdown">
+        <optgroup label="Select current role">
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>other</option>
+        </optgroup>
+      </select>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <input type="radio" name="attributes" />
+      <label for="Definitely">Definitely</label><br />
+      <input type="radio" name="attributes" />
+      <label for="Maybe">Maybe</label><br />
+      <input type="radio" name="attributes" />
+      <label for="Not sure">Not sure</label><br />
+    </form>
+  </body>
 </html>
